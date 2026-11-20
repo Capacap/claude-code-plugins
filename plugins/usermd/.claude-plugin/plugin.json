@@ -1,0 +1,9 @@
+{
+  "name": "usermd",
+  "version": "0.2.0",
+  "description": "A button above the prompt that opens your own reminders for writing a request, read from USER.md in your Claude Code config folder",
+  "author": { "name": "Simon Sorkin", "url": "https://github.com/Capacap" },
+  "repository": "https://github.com/Capacap/claude-code-plugins",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}

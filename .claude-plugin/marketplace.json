@@ -1,0 +1,14 @@
+{
+  "name": "capacap",
+  "owner": { "name": "Simon Sorkin", "url": "https://github.com/Capacap" },
+  "description": "Plugins for Claude Code that change its own interface",
+  "plugins": [
+    {
+      "name": "usermd",
+      "source": "./plugins/usermd",
+      "description": "A button above the prompt that opens your own reminders for writing a request",
+      "license": "MIT",
+      "keywords": ["prompt", "reminders", "checklist"]
+    }
+  ]
+}
