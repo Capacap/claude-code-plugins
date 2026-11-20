@@ -1,6 +1,9 @@
 {
   "name": "capacap",
-  "owner": { "name": "Simon Sorkin", "url": "https://github.com/Capacap" },
+  "owner": {
+    "name": "Simon Sorkin",
+    "url": "https://github.com/Capacap"
+  },
   "description": "Plugins for Claude Code that change its own interface",
   "plugins": [
     {
@@ -8,7 +11,24 @@
       "source": "./plugins/usermd",
       "description": "A button above the prompt that opens your own reminders for writing a request",
       "license": "MIT",
-      "keywords": ["prompt", "reminders", "checklist"]
+      "keywords": [
+        "prompt",
+        "reminders",
+        "checklist"
+      ]
+    },
+    {
+      "name": "pathview",
+      "source": "./plugins/pathview",
+      "description": "Makes the file paths in Claude's replies clickable, and lists them after each reply with a preview and an open button",
+      "license": "MIT",
+      "keywords": [
+        "paths",
+        "links",
+        "preview",
+        "editor",
+        "vscode"
+      ]
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "name": "pathview",
+  "version": "0.2.0",
+  "description": "Turns each path a reply names into a link, and lists the paths after the reply with a folding preview of each and buttons that open them in your editor",
+  "author": { "name": "Simon Sorkin", "url": "https://github.com/Capacap" },
+  "repository": "https://github.com/Capacap/claude-code-plugins",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "editor": {
+      "type": "string",
+      "title": "Editor",
+      "description": "Where open takes a text file when the editor command below is empty. auto uses VS Code in VS Code's terminal, $EDITOR in a kitty window in kitty, and the system's opener elsewhere. vscode opens a tab in VS Code from any terminal on your own machine. system always uses the system's opener.",
+      "default": "auto",
+      "options": ["auto", "vscode", "system"]
+    },
+    "editorCommand": {
+      "type": "string",
+      "title": "Editor command",
+      "description": "Opens a text file, such as zed {file}:{line}, and comes before the Editor setting. {file} is the file's full path and {line} the line a reply named, or 1.",
+      "default": ""
+    },
+    "terminalCommand": {
+      "type": "string",
+      "title": "Terminal command",
+      "description": "Starts a terminal in a folder, such as wezterm start --cwd {dir}. Empty uses kitty where the session runs in it, and draws no terminal button elsewhere.",
+      "default": ""
+    },
+    "imageCommand": {
+      "type": "string",
+      "title": "Image viewer command",
+      "description": "Opens a picture, such as qimgv {file}. Empty uses the system's opener.",
+      "default": ""
+    },
+    "browserCommand": {
+      "type": "string",
+      "title": "Browser command",
+      "description": "Opens an HTML page or a PDF, such as firefox {file}. Empty uses the system's opener.",
+      "default": ""
+    }
+  }
+}

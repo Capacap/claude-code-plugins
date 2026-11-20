@@ -4,6 +4,7 @@ Plugins for [Claude Code](https://claude.com/claude-code) that change its own in
 
 | Plugin | What it does |
 |---|---|
+| [pathview](plugins/pathview) | Makes the file paths in Claude's replies clickable, and lists them after each reply with a preview and a button that opens the file in your editor. |
 | [usermd](plugins/usermd) | A button above the prompt that opens your own reminders for writing a request. |
 
 ## Install
@@ -11,13 +12,13 @@ Plugins for [Claude Code](https://claude.com/claude-code) that change its own in
 At the prompt of a Claude Code session in a terminal, with the name of the plugin you want:
 
 ```
-/plugin install usermd --marketplace Capacap/claude-code-plugins
+/plugin install pathview --marketplace Capacap/claude-code-plugins
 ```
 
 Or from a shell:
 
 ```sh
-claude plugin install usermd --marketplace Capacap/claude-code-plugins
+claude plugin install pathview --marketplace Capacap/claude-code-plugins
 ```
 
 Claude Code asks once if it may add this repository as a marketplace, and then for a scope. Each plugin's own README says how to use it.
