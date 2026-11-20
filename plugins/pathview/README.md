@@ -45,7 +45,7 @@ A button shows only where it has something to start. So the `terminal` button sh
 
 ## Settings
 
-Type `/config` in a session and look for pathview, or run `claude plugin configure pathview`.
+Type `/plugin configure pathview@capacap` in a session. All five settings are optional.
 
 | Setting | What it does | Example |
 |---|---|---|
